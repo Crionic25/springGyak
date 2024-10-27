@@ -1,0 +1,31 @@
+server:
+  port: 8080
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+  error:
+    whitelabel:
+      enabled: false
+
+fixer: false
+fixer_access_key: access_key=aa6b80d2ead8fca335dd78b7e0c31dba
+
+spring:
+  application:
+    name: "spring-gyakorlas"
+  datasource:
+    url: jdbc:postgresql://localhost:5432/spring_gyak?serverTimezone=UTC
+    username: postgres
+    password: ylpWGH23
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    generate-ddl: true
